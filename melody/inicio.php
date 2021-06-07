@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel=stylesheet href="estilo.css">
+    
     <title>melody music</title>
   </head>
   <body>
@@ -43,13 +44,13 @@
             </li>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                mi perfil
+                configuracion
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">mi perfil</a></li>
+                <li><a class="dropdown-item" href="cliente.php">crud</a></li>
                 <li><a class="dropdown-item" href="#">mi carrito</a></li>
                 <li><a class="dropdown-item" href="logout.php">salir</a></li>
-              </>
+              </ul>
           </ul>
         </div>
       </div>

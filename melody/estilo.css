@@ -1,3 +1,5 @@
+
+
 #header {
     background-color: #e46728;
 background-image: linear-gradient(90deg, #e46728 0%, #cf1c0a 50%, #432f2f 100%);
@@ -56,3 +58,170 @@ h1{
     padding:60px;
 }
 
+.contenido-tabla table {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 800px;
+    height: 200px;
+    border: 1px solid rgb(70, 62, 62);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.contenido-tabla tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+    
+}
+.contenido-tabla tbody tr{
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
+    text-align: left;
+  
+}
+.contenido-tabla th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid rgb(245, 10, 10);
+    
+}
+.contenido-tabla thead #tabla-crud {
+    color: white;
+    text-align: center;
+    background-color: rgb(247, 81, 4);
+}
+
+
+/*Esto es del formulario para añadir y editar*/
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span {
+    color: #fc6704;
+}
+.contact-form {
+    background: #fdfdfd;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+    color: rgb(8, 8, 8);
+}
+
+.contact-form form .block {
+    grid-column: 1 / 2;
+}
+.contact-form form input {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: rgb(15, 15, 15);
+    border-bottom: 1px solid #d63031;
+}
+.contact-form form button{
+    width: 30%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: rgb(248, 80, 2);
+    border-bottom: 1px solid #f85d03;
+}
+
+.contact-form form button {
+    background: #ff5506;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+    cursor: pointer;
+}
+
+.centrar {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.centrarnav {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+@media(min-width: 700px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr;
+        padding: 300px ;
+        padding-top: 300px;
+        padding-top: 4em;
+        background-color: #FFFFFF;
+        background-image: linear-gradient(180deg, #FFFFFF 0%, #ff8a62 33%, #FF0000 66%, #201e1e 100%);
+        
+    }
+    .contact-wrapper > * {
+        padding: 150px;
+        border:1px solid rgb(27, 12, 12);
+
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+
+
+.button_slide {
+    color: rgb(5, 5, 5);
+    border: 2px solid rgb(255, 102, 0);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ec120b;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    text-decoration:none
+  }
+
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #f77d2b;
+    color: black;
+  }
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }

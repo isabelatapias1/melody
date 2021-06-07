@@ -1,7 +1,8 @@
 <?php
+
 require 'config.php';
 
-if (isset($_POST['login'])) {
+if (isset( $_POST['login'])) {
     $errMSg ='';
 
 $usuario = $_POST{'usuario'};
@@ -13,13 +14,14 @@ if($contrasena == '')
 $errMsg = 'Ingrese una contraseña';
 
 if($errMsg == ''){
+
     try {
         $stmt = $connect->prepare('SELECT nombre, apellido, usuario, contrasena, secretpin FROM usuario WHERE usuario = :usuario');
         $stmt->execute(array(
             ':usuario'=>$usuario
             
         ));
-        $data = $stmt ->fetch(PDO::FETCH_ASSOC);
+        $data = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($data == false){
             $errMsg = "usuario $usuario no encontrado.";
